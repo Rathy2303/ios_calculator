@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="result">
+                <input readonly id="txtdislay" type="text" value="0" maxlength="10">
+            </div>
+            <div class="button">
+                <div class="btn-row">
+                    <button id="btnAC" onclick="clearTxt()" style="background: #A5A5A5;color: black;">AC</button>
+                    <button onclick="btnSumnSub()"  style="background: #A5A5A5;color: black;">+/-</button>
+                    <button onclick="btnPercent()"  style="background: #A5A5A5;color: black;">%</button>
+                    <button id="btnDiv" onclick="btnOperator('/')" style="background: #FE9505;">÷</button>
+                </div>
+                <div class="btn-row">
+                    <button id="btn7" onclick="btnClick(7)">7</button>
+                    <button id="btn8" onclick="btnClick(8)">8</button>
+                    <button id="btn9" onclick="btnClick(9)">9</button>
+                    <button id="btnMul" onclick="btnOperator('X')" style="background: #FE9505;">x</button>
+                </div>
+                <div class="btn-row">
+                    <button id="btn4" onclick="btnClick(4)">4</button>
+                    <button id="btn5" onclick="btnClick(5)">5</button>
+                    <button id="btn6" onclick="btnClick(6)">6</button>
+                    <button id="btnsub" onclick="btnOperator('-')" style="background: #FE9505;">-</button>
+                </div>
+                <div class="btn-row">
+                    <button id="btn1" onclick="btnClick(1)">1</button>
+                    <button id="btn2" onclick="btnClick(2)">2</button>
+                    <button id="btn3" onclick="btnClick(3)">3</button>
+                    <button id="btnsum" onclick="btnOperator('+')" style="background: #FE9505;">+</button>
+                </div>
+                <div class="btn-row">
+                    <button id="btnZero" onclick="btnZero()">0</button>
+                    <button id="btndot" onclick="btnDot()">,</button>
+                    <button id="btnResult" onclick="btnResult()" style="background: #FE9505;">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
